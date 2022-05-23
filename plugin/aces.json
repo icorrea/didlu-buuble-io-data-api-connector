@@ -1,0 +1,49 @@
+{
+  "custom": {
+    "conditions": [
+      {
+        "id": "on-data-api-loaded",
+        "scriptName": "OnDataApiLoaded",
+        "highlight": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "on-load-promise",
+        "scriptName": "OnLoadPromise",
+        "highlight": false,
+        "params": [
+          {
+            "id": "urlapi",
+            "type": "string"
+          },
+          {
+            "id": "apitoken",
+            "type": "string"
+          },
+          {
+            "id": "category",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "id": "get-by-id",
+        "expressionName": "GetById",
+        "returnType": "any",
+        "params": [
+          {
+            "id": "id",
+            "type": "string"
+          },
+          {
+            "id": "data-type",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

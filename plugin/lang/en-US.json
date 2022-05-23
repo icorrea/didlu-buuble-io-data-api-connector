@@ -1,0 +1,61 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Didlu Bubble.io Data API Connector Plugin",
+  "text": {
+    "plugins": {
+      "didlu_bubbleiodataapiconnector": {
+        "name": "Didlu Bubble.io Data API Connector",
+        "description": "This is a bubble.io Data API Connector",
+        "help-url": "https://github.com/armandoalonso/c3IDE",
+        "properties": {},
+        "aceCategories": {
+          "custom": "Custom"
+        },
+        "conditions": {
+          "on-data-api-loaded": {
+            "list-name": "On Data Api Loaded",
+            "display-text": "When Data API is Loaded",
+            "description": "When Data API is Loaded"
+          }
+        },
+        "actions": {
+          "on-load-promise": {
+            "list-name": "On Load Promise",
+            "display-text": "Url: {0}, API Token: {1}, Category: {2}",
+            "description": "this is the description",
+            "params": {
+              "urlapi": {
+                "name": "Urlapi",
+                "desc": "This is the parameters description"
+              },
+              "apitoken": {
+                "name": "Apitoken",
+                "desc": "This is the parameters description"
+              },
+              "category": {
+                "name": "Category",
+                "desc": "This is the parameters description"
+              }
+            }
+          }
+        },
+        "expressions": {
+          "get-by-id": {
+            "translated-name": "GetById",
+            "description": "This is the expression description",
+            "params": {
+              "id": {
+                "name": "Id",
+                "desc": "This is the parameters description"
+              },
+              "data-type": {
+                "name": "Data Type",
+                "desc": "This is the parameters description"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
